@@ -1,0 +1,90 @@
+@media screen and (max-width:768px) {
+    body {
+        background-color: gray;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width:1000px) {
+    body {
+        background-color: antiquewhite;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    body {
+        background-color: gray;
+    }
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    background-image: url(photo2.png);
+    background-size: 100%;
+    animation: breathe 1s ease-in-out infinite alternate;
+}
+
+@keyframes breathe {
+    0% {
+        opacity: 0.2;
+        box-shadow: 0 1px 2px black
+    }
+
+    50% {
+        opacity: 0.5;
+        box-shadow: 0 1px 2px grey
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0 1px 30px white
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+}
+
+.box {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.picture {
+    border-radius: 20px;
+    box-shadow: 10px 10px pink;
+}
+
+.text1,
+.text2,
+.text3 {
+    font-size: 20px;
+    color: black;
+}
+
+.container {
+    display: flex;
+}
+
+.content1 {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    flex: 0.5;
+}
+
+.content2 {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    flex: 0.5;
+}
+
+.person,
+.school,
+.hobby {
+    font-size: 40px;
+}
